@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <div class="input-container">
+            <label for="income">Income:</label>
+            <input type="number" id="income" placeholder="Enter your income">
+        </div>
+        <div class="input-container">
+            <label for="expenses">Expenses:</label>
+            <input type="number" id="expenses" placeholder="Enter your expenses">
+        </div>
+        <div class="input-container">
+            <label for="savings">Savings Goal:</label>
+            <input type="number" id="savings" placeholder="Enter your savings goal">
+        </div>
+        <div class="result-container">
+            <h2>Remaining Budget:</h2>
+            <p id="remaining-budget">$0.00</p>
+        </div>
+        <canvas id="expense-chart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
